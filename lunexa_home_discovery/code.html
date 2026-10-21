@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Sora:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#006c49", "surface-variant": "#31353e", "secondary-fixed": "#acedff", "outline-variant": "#3c4a42", "primary-fixed-dim": "#4edea3", "tertiary": "#ffb95f", "inverse-surface": "#dfe2ee", "secondary": "#4cd7f6", "on-tertiary-container": "#523200", "on-tertiary-fixed-variant": "#653e00", "outline": "#86948a", "tertiary-fixed": "#ffddb8", "surface-bright": "#353942", "on-secondary-fixed-variant": "#004e5c", "surface": "#0f131c", "surface-container-highest": "#31353e", "background": "#0f131c", "primary-fixed": "#6ffbbe", "secondary-container": "#03b5d3", "on-surface": "#dfe2ee", "tertiary-container": "#e29100", "on-secondary-fixed": "#001f26", "secondary-fixed-dim": "#4cd7f6", "error-container": "#93000a", "on-primary-fixed-variant": "#005236", "on-error-container": "#ffdad6", "on-primary": "#003824", "surface-container": "#1c2028", "primary-container": "#10b981", "on-surface-variant": "#bbcabf", "on-secondary-container": "#00424e", "on-background": "#dfe2ee", "on-primary-container": "#00422b", "surface-dim": "#0f131c", "surface-container-lowest": "#0a0e16", "inverse-on-surface": "#2c3039", "on-secondary": "#003640", "surface-tint": "#4edea3", "surface-container-low": "#181c24", "tertiary-fixed-dim": "#ffb95f", "primary": "#4edea3", "error": "#ffb4ab", "on-primary-fixed": "#002113", "on-tertiary": "#472a00", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#262a33", "on-error": "#690005" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin": "3rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "space-xs": "0.25rem" }, fontFamily: { "body-xl": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-sm": ["Sora"], "headline-md": ["Sora"], "display": ["Sora"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Sora"], "display-mobile": ["Sora"], "headline-xl": ["Sora"], "headline-lg": ["Sora"], "body-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Sora"] }, fontSize: { "body-xl": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Lunexa Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U5uudeQSdyiVajGP66FEbxrle5ubMlBOXsKiR6K-fMJCOBhDQH34j7ic5jyrk-sSFB9RKOTRYVjLdiUERcrs7RpaX66Syt9G55xlGKod9YW9pIxngd343BdpGwmuJfr1J9aB-HQy76qvXtg_B3HVAbPwUzMrjNzZuUAjhg7lEZ0q8dSG6aOGVUNYT9bzWuU9ofuwWxzjcSEpEOaLtT9vU8f39oHy0B_YmDfBZBfF36pHM-WywQFjEMBE4"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">Lunexa</span><span class="hidden">Home</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-all"><span class="material-symbols-outlined text-2xl">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface animate-pulse"></span></button><div class="p-space-xs flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9YcINAHKVuZ7RXLKoSuEsUKTz4uf6Q86KQqxlUQP-F-ELJIaOtScy071CIheXRlbWt5K1Vfhb0GDdrpLq5pP0rAkntrXtBivLCp9nJ5rvU_HRtaCYFemo08d4ypIISk7dvZ-CN7qnfwZTgv_SDqpjBCsQV5VBy2uCK3CoxeeCSvGHS1U5oERNImlk14zUaQUHWG74o7beg2-DXoIM9ndjPOdyChhgG_9CpeUFUCYoPzWg8BHfwi5hvw"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Sticky Search Bar -->
+<div class="sticky top-16 z-40 px-gutter-mobile py-space-sm bg-surface/90 backdrop-blur-xl">
+<div class="relative flex items-center w-full h-12 bg-surface-container rounded-full px-space-md shadow-lg shadow-surface-container-lowest/50 group focus-within:ring-2 focus-within:ring-secondary/40 transition-all">
+<span class="material-symbols-outlined text-outline text-xl mr-space-xs">search</span>
+<input class="w-full bg-transparent text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none" placeholder="Search sneakers, tech, luxury apparel..." type="text"/>
+<div class="flex items-center gap-space-xs pl-space-xs">
+<button aria-label="Voice Search" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<button aria-label="Visual Scan" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[20px]">document_scanner</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-lg px-gutter-mobile pt-space-xs pb-space-lg">
+<!-- Hero Banner Card -->
+<div class="relative overflow-hidden rounded-lg bg-surface-container p-space-lg shadow-xl">
+<!-- Glow Gradients -->
+<div class="absolute -top-16 -right-16 w-48 h-48 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-48 h-48 bg-primary/15 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Hero Visual Backdrop -->
+<div class="absolute inset-0 bg-cover bg-center opacity-35 mix-blend-screen pointer-events-none" data-alt="Futuristic cyber minimalist aesthetic luxury wearable accessories floating in dark neon lighting, obsidian textures with electric cyan and emerald green rim highlights, cinematic product photography, ultra-detailed sleek design." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_peEJSULJzhsrA-kK4ugGvNmHPRUKoIKjr2PT78c4N_WHaRTEZ3xL_aSpsbsHXz4U3u5f2hLKUITfNaH0SE63QVhhJ9aciP6xTxAElzYmAPngf9WJ1xmsZ-4koCsl1hirdZu85-82GW3t09TlvbZYariVEKsXzYmC51cRMPBfnmg6xpXxdYLrkJHK5IaNz1L5KIrHrELoyR8AQDA6j618nrSOgdn71rc5AEbRC_e9CV2lxM37uEE9cw')"></div>
+<div class="relative z-10 flex flex-col items-start gap-space-md">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm tracking-wider flex items-center gap-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            NEW DROPS // SPRING 2025
+          </span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold shadow-sm">
+            -35% OFF
+          </span>
+</div>
+<div class="flex flex-col gap-1 max-w-[260px]">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight">
+            Aura Cyber Minimalist Series
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Engineered aerospace-grade titanium &amp; neural audio woven into high-ticket nocturnal streetwear.
+          </p>
+</div>
+<button class="flex items-center gap-2 px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_0_24px_-4px_rgba(16,185,129,0.45)] hover:scale-105 active:scale-95 transition-all">
+<span>Explore Collection</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Category Pills Ticker -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Curated Categories</span>
+<span class="font-label-sm text-label-sm text-primary">Browse all (24)</span>
+</div>
+<div class="flex gap-space-xs overflow-x-auto pb-1 scrollbar-none -mx-gutter-mobile px-gutter-mobile">
+<button class="px-space-md py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-[0_0_16px_rgba(78,222,163,0.3)] transition-all">
+          All
+        </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:text-on-surface transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">headphones</span>
+          Audio
+        </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:text-on-surface transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">steps</span>
+          Footwear
+        </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:text-on-surface transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">watch</span>
+          Watches
+        </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:text-on-surface transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">apparel</span>
+          Outerwear
+        </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:text-on-surface transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">backpack</span>
+          Accessories
+        </button>
+</div>
+</div>
+<!-- Flash Sale Horizon Section -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-lg bg-surface-container-low shadow-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-2xl">bolt</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Flash Drops</h3>
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Zero stock refill</span>
+</div>
+</div>
+<!-- Live Countdown Component -->
+<div class="flex items-center gap-1 bg-surface-container-highest px-space-sm py-1 rounded-full font-label-sm text-label-sm text-on-surface shadow-inner" id="countdown-timer">
+<span class="material-symbols-outlined text-[14px] text-tertiary">timer</span>
+<span class="font-mono text-tertiary font-bold tracking-tight" id="timer-display">04h : 28m : 15s</span>
+</div>
+</div>
+<!-- Flash Sale Cards (Horizontal Snap Scroll) -->
+<div class="flex gap-space-md overflow-x-auto pb-space-xs scrollbar-none -mx-space-md px-space-md snap-x">
+<!-- Flash Item 1 -->
+<div class="snap-start shrink-0 w-64 p-space-md rounded-DEFAULT bg-surface-container flex flex-col gap-space-sm relative group shadow-md">
+<div class="relative w-full h-36 rounded-md overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+              -42%
+            </span>
+<button aria-label="Add to wishlist" class="wishlist-btn absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Futuristic black matte wireless earbuds in open luminous cyan magnetic charging cradle, minimal studio illumination with subtle emerald glow, crisp carbon fiber texture details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfA7khpRLQEnkip0lbqlEmMO-5ugoz-NShLvb_CQfwD66tKh2WbYeLvHiwTXjJ93TZvThFkLjmhnlKkNDzOU5nP-c0K4O15yWbDQv8-eHUUUdf5851csfPnCzMIwonFzNaNLVCj0UxR_pARKJY0R-Z6PD1DMadiC3irC8xE8yjQex7kkqIIYtBpKpevDsSf-zls73hhBhmzB9l-uOIZ8mKTMSOTpRHA9oo7iAZFzfLVePWmq-42-o58A"/>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary">Acoustics Lab</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Vortex Pro Spatial Pods</h4>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$149.00</span>
+<span class="font-body-sm text-body-sm text-outline line-through">$259.00</span>
+</div>
+</div>
+<!-- Stock Progress -->
+<div class="flex flex-col gap-1 mt-auto">
+<div class="flex justify-between text-label-sm font-label-sm">
+<span class="text-tertiary flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 7 left in stock
+              </span>
+<span class="text-outline">86% claimed</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 86%;"></div>
+</div>
+</div>
+</div>
+<!-- Flash Item 2 -->
+<div class="snap-start shrink-0 w-64 p-space-md rounded-DEFAULT bg-surface-container flex flex-col gap-space-sm relative group shadow-md">
+<div class="relative w-full h-36 rounded-md overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+              -30%
+            </span>
+<button aria-label="Add to wishlist" class="wishlist-btn absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Tactical carbon matte chronograph watch with glowing bioluminescent green numerals, dark textured band on a sleek metallic podium, nocturnal luxury product photo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM5ecTXrTfBQWudM-DPzQ5HbXEfx611WL9xaQLr4m2zmZ_F6PrQa5L3z7-3QyC097wRCZGJoaMiBgj5yRIwKj2SOxma12AAyP8EU9oqB4Dm3_l8GsTLSvD0x6OUJO-H7wWQ-gNT5ruk6ht6_wsK4OQSxYrT0WXlgdH8l6Ew2VW-snvBQFfpBlFeiZrKg7CiVNpCmusD5IqlyqN7x4p9pA3hro_sNwFEglyvUv_rI5MT3iGoM6HlwMH0A"/>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary">Horology X</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Aero Carbon Tachymeter</h4>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$315.00</span>
+<span class="font-body-sm text-body-sm text-outline line-through">$450.00</span>
+</div>
+</div>
+<!-- Stock Progress -->
+<div class="flex flex-col gap-1 mt-auto">
+<div class="flex justify-between text-label-sm font-label-sm">
+<span class="text-tertiary flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 3 left in stock
+              </span>
+<span class="text-outline">94% claimed</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 94%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Products 2-Column Grid -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Featured Artifacts</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Signature handcrafted nocturnal essentials</p>
+</div>
+<button class="p-2 rounded-full bg-surface-container text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- 2-Col Grid -->
+<div class="grid grid-cols-2 gap-gutter-mobile">
+<!-- Product 1 -->
+<div class="flex flex-col rounded-DEFAULT bg-surface-container p-space-sm shadow-md group relative">
+<div class="relative w-full aspect-square rounded-md overflow-hidden bg-surface-container-lowest">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-full bg-surface/80 backdrop-blur-md text-primary-fixed-dim font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-primary"></span> In Stock
+            </span>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Matte dark-slate over-ear wireless headphones with emerald luminescent accents, suspended over minimalist pedestal, studio high-end lighting with deep moody shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDifTnRTc03w4jL-bjtk26N2v3R-9_0kKOAuxCKbNZyvg149qYL__ocXanDMgQtPM7604qrq2KGO0dkIis07yuCXNNxmKVf3r9tknzVor3ezuz6UqQMrYHqOQ4Snd6PShJpxOW5obqb3foIxQ_nlin9uuLkQpw-3nwNgMdQJe49J_5YypEKkQeG5agN2vAoPbrv4XDrw_fCSLfkhL94LN5Ep3kVAAzCdawKbw2fZ8UYogNKCN-BF5shrg"/>
+</div>
+<div class="flex flex-col gap-1 pt-space-xs flex-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface">4.9</span>
+<span class="font-label-sm text-label-sm text-outline">(128)</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Lunexa Apex Wireless Headphones</h4>
+<span class="font-headline-sm text-headline-sm text-primary font-bold mt-auto">$289.00</span>
+<button class="quick-add-btn mt-space-xs w-full py-1.5 px-space-xs rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold hover:bg-primary hover:text-on-primary active:scale-95 transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span>
+              Quick Add
+            </button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="flex flex-col rounded-DEFAULT bg-surface-container p-space-sm shadow-md group relative">
+<div class="relative w-full aspect-square rounded-md overflow-hidden bg-surface-container-lowest">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-full bg-surface/80 backdrop-blur-md text-primary-fixed-dim font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-primary"></span> In Stock
+            </span>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Monochrome dark futuristic aerodynamic sneakers with glowing cyan tread accents, 3D knitted mesh, floating angled view on black reflection background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVURCvyc74Q7f9NwIVUWqXfsmp6S_r3hS7PoJ63GM0LTUTfv6GYwRTRsWLtvdwMiEZ8HlwFDoLpks-dg0GnoJBWi3p_NBxGeATHKJvZr_jtKbIzTGm9afvL4f44OTfCuUEJbeDbnRS6LXzbavLOdpOkdGm1PcTNtXGO_OubD83Ap4_yB-F83tZFWTp16bKo4JJPTAFZjh-JwccN6uzpDwdABIDC2P5BjjeXglm2-PRrhBYXjCivtUCXA"/>
+</div>
+<div class="flex flex-col gap-1 pt-space-xs flex-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface">4.8</span>
+<span class="font-label-sm text-label-sm text-outline">(94)</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Cyberknit Stride Runners</h4>
+<span class="font-headline-sm text-headline-sm text-primary font-bold mt-auto">$195.00</span>
+<button class="quick-add-btn mt-space-xs w-full py-1.5 px-space-xs rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold hover:bg-primary hover:text-on-primary active:scale-95 transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span>
+              Quick Add
+            </button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="flex flex-col rounded-DEFAULT bg-surface-container p-space-sm shadow-md group relative">
+<div class="relative w-full aspect-square rounded-md overflow-hidden bg-surface-container-lowest">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-full bg-surface/80 backdrop-blur-md text-primary-fixed-dim font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-primary"></span> In Stock
+            </span>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Minimalist hexagonal black obsidian luxury smartwatch displaying neon emerald holographic biometric dials, polished edge highlights on dark satin cloth background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYAcBESesawKZ-igwW9nl_WT0Wyf08r2eilwvIlI6iVhWWA4a-BPNFIbNd2eBqnp7OJ9psISYEZQqvCffcdDTyrh-Rezh_9R38IfEEmTIr5BhrzVMK6I3IL9l92A0XWX37cfBlYcafSXsFBH2frq7YWWa-SdseEth4hwxs2sbiyVTlwOtNLWvjQ-ysXQ3CovTIpODClLsY2jzhUF061GgnvPKS2hAIripaSnBPGRgfgseco4NlOGDftg"/>
+</div>
+<div class="flex flex-col gap-1 pt-space-xs flex-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface">5.0</span>
+<span class="font-label-sm text-label-sm text-outline">(62)</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Chronos Obsidian Smartwatch</h4>
+<span class="font-headline-sm text-headline-sm text-primary font-bold mt-auto">$420.00</span>
+<button class="quick-add-btn mt-space-xs w-full py-1.5 px-space-xs rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold hover:bg-primary hover:text-on-primary active:scale-95 transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span>
+              Quick Add
+            </button>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="flex flex-col rounded-DEFAULT bg-surface-container p-space-sm shadow-md group relative">
+<div class="relative w-full aspect-square rounded-md overflow-hidden bg-surface-container-lowest">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-full bg-surface/80 backdrop-blur-md text-primary-fixed-dim font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-primary"></span> In Stock
+            </span>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Technical weatherproof dark titanium hooded windbreaker jacket with subtle reflective geometric lines, premium high-fashion futuristic look on mannequin." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMMLGrvaNU1Pe5ad6yXn9dGQm1V4b6V8oxSPv1N3tO6RMn2ArQyaeSigQobdXf6lMgQUxttpkadTV9j1gfN33HCr07A9We_gXaIovs-cfSGRl2M32tE8MM0vTC8AeS6kDCqrkvGNdWJLXx43089UckRpkutvRSd2kSelM3u5qbEKri3sg6EWbCzVKBRT83SKM0qWcvIEmYB3qjURGcnAqkhYcxw736InnVZhplEK16eF70vsAWPA_c7w"/>
+</div>
+<div class="flex flex-col gap-1 pt-space-xs flex-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface">4.7</span>
+<span class="font-label-sm text-label-sm text-outline">(180)</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Titanium Windbreaker</h4>
+<span class="font-headline-sm text-headline-sm text-primary font-bold mt-auto">$165.00</span>
+<button class="quick-add-btn mt-space-xs w-full py-1.5 px-space-xs rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold hover:bg-primary hover:text-on-primary active:scale-95 transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span>
+              Quick Add
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Customer Review Card / Ticker -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-lg bg-surface-container shadow-lg relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface font-semibold">Devon Vance</h5>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+              Verified Collector • Tokyo
+            </span>
+</div>
+</div>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<blockquote class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+        “The Chronos Obsidian feels like something beamed back from 2045. Weight, tactile crown resistance, and dark glass finish are unmatched.”
+      </blockquote>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Purchased: Chronos Obsidian (42mm)</span>
+</div>
+</div>
+<!-- VIP Newsletter Subscribe Card -->
+<div class="flex flex-col gap-space-md p-space-lg rounded-lg bg-gradient-to-br from-surface-container via-surface-container-high to-surface-container shadow-xl relative overflow-hidden">
+<div class="absolute -top-12 -left-12 w-36 h-36 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container/20 text-primary-fixed font-label-sm text-label-sm font-bold tracking-wider">
+            INSIDER PRIVILEGE
+          </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-2">Unlock Private Releases</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[22px]">loyalty</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Join the syndicate to receive secret drops 1 hour early. Use keycode at checkout for instant credits:
+      </p>
+<!-- Coupon Code Pill -->
+<div class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-lowest border-dashed">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-xl">confirmation_number</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Exclusive Voucher</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-mono font-bold tracking-widest" id="coupon-code">LUNEXA15</span>
+</div>
+</div>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-tertiary hover:text-on-tertiary active:scale-95 transition-all" id="copy-coupon-btn">
+          Copy Code
+        </button>
+</div>
+<!-- Subscription Input Form -->
+<div class="flex flex-col sm:flex-row gap-space-xs">
+<div class="relative flex-1">
+<input class="w-full h-11 px-space-md rounded-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary/40" id="newsletter-email" placeholder="Enter your encrypted email..." type="email"/>
+</div>
+<button class="h-11 px-space-lg rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-1 shadow-md shadow-primary/20" id="subscribe-btn">
+<span>Claim 15%</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<span class="hidden font-label-sm text-label-sm text-primary" id="subscribe-feedback"></span>
+</div>
+</div>
+</div>
+<script>
+  // Countdown Timer Logic
+  (function initTimer() {
+    let totalSeconds = 4 * 3600 + 28 * 60 + 15;
+    const timerDisplay = document.getElementById('timer-display');
+    if (!timerDisplay) return;
+
+    setInterval(() => {
+      if (totalSeconds <= 0) {
+        totalSeconds = 16 * 3600; // Reset loop
+      }
+      totalSeconds--;
+      const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+      const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+      const seconds = String(totalSeconds % 60).padStart(2, '0');
+      timerDisplay.textContent = `${hours}h : ${minutes}m : ${seconds}s`;
+    }, 1000);
+  })();
+
+  // Wishlist Heart Toggle
+  document.querySelectorAll('.wishlist-btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const icon = button.querySelector('.material-symbols-outlined');
+      const isFilled = icon.style.fontVariationSettings?.includes("'FILL' 1");
+      if (isFilled) {
+        icon.style.fontVariationSettings = "'FILL' 0";
+        button.classList.remove('text-error');
+        button.classList.add('text-on-surface-variant');
+      } else {
+        icon.style.fontVariationSettings = "'FILL' 1";
+        button.classList.add('text-error');
+        button.classList.remove('text-on-surface-variant');
+        button.classList.add('scale-125');
+        setTimeout(() => button.classList.remove('scale-125'), 200);
+      }
+    });
+  });
+
+  // Quick Add Button Micro-feedback
+  document.querySelectorAll('.quick-add-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const originalContent = btn.innerHTML;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px]">check</span> Added`;
+      btn.classList.add('bg-primary', 'text-on-primary');
+      setTimeout(() => {
+        btn.innerHTML = originalContent;
+        btn.classList.remove('bg-primary', 'text-on-primary');
+      }, 1400);
+    });
+  });
+
+  // Copy Coupon Button
+  const copyBtn = document.getElementById('copy-coupon-btn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      const code = document.getElementById('coupon-code')?.textContent || 'LUNEXA15';
+      navigator.clipboard?.writeText(code).then(() => {
+        copyBtn.textContent = 'Copied!';
+        copyBtn.classList.add('bg-tertiary', 'text-on-tertiary');
+        setTimeout(() => {
+          copyBtn.textContent = 'Copy Code';
+          copyBtn.classList.remove('bg-tertiary', 'text-on-tertiary');
+        }, 1800);
+      });
+    });
+  }
+
+  // Subscribe Newsletter
+  const subscribeBtn = document.getElementById('subscribe-btn');
+  const emailInput = document.getElementById('newsletter-email');
+  const feedback = document.getElementById('subscribe-feedback');
+  if (subscribeBtn && emailInput && feedback) {
+    subscribeBtn.addEventListener('click', () => {
+      if (emailInput.value.includes('@')) {
+        feedback.textContent = 'Access granted! Welcome to the Lunexa Syndicate.';
+        feedback.classList.remove('hidden', 'text-error');
+        feedback.classList.add('text-primary');
+        emailInput.value = '';
+      } else {
+        feedback.textContent = 'Please provide a valid encrypted email address.';
+        feedback.classList.remove('hidden', 'text-primary');
+        feedback.classList.add('text-error');
+      }
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/85 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] transition-colors text-primary" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="catalog" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-label-sm text-label-sm">Catalog</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] relative text-on-surface-variant transition-colors" data-path="wishlist" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="absolute -top-1 -right-2 px-1.5 py-0.2 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[9px] font-bold shadow-[0_0_12px_rgba(16,185,129,0.5)]">3</span></div><span class="font-label-sm text-label-sm">Wishlist</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] relative text-on-surface-variant transition-colors" data-path="cart" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-2 px-1.5 py-0.2 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] font-bold shadow-[0_0_12px_rgba(76,215,246,0.5)]">2</span></div><span class="font-label-sm text-label-sm">Cart</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

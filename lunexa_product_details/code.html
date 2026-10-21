@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Sora:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#006c49", "surface-variant": "#31353e", "secondary-fixed": "#acedff", "outline-variant": "#3c4a42", "primary-fixed-dim": "#4edea3", "tertiary": "#ffb95f", "inverse-surface": "#dfe2ee", "secondary": "#4cd7f6", "on-tertiary-container": "#523200", "on-tertiary-fixed-variant": "#653e00", "outline": "#86948a", "tertiary-fixed": "#ffddb8", "surface-bright": "#353942", "on-secondary-fixed-variant": "#004e5c", "surface": "#0f131c", "surface-container-highest": "#31353e", "background": "#0f131c", "primary-fixed": "#6ffbbe", "secondary-container": "#03b5d3", "on-surface": "#dfe2ee", "tertiary-container": "#e29100", "on-secondary-fixed": "#001f26", "secondary-fixed-dim": "#4cd7f6", "error-container": "#93000a", "on-primary-fixed-variant": "#005236", "on-error-container": "#ffdad6", "on-primary": "#003824", "surface-container": "#1c2028", "primary-container": "#10b981", "on-surface-variant": "#bbcabf", "on-secondary-container": "#00424e", "on-background": "#dfe2ee", "on-primary-container": "#00422b", "surface-dim": "#0f131c", "surface-container-lowest": "#0a0e16", "inverse-on-surface": "#2c3039", "on-secondary": "#003640", "surface-tint": "#4edea3", "surface-container-low": "#181c24", "tertiary-fixed-dim": "#ffb95f", "primary": "#4edea3", "error": "#ffb4ab", "on-primary-fixed": "#002113", "on-tertiary": "#472a00", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#262a33", "on-error": "#690005" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin": "3rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "space-xs": "0.25rem" }, fontFamily: { "body-xl": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-sm": ["Sora"], "headline-md": ["Sora"], "display": ["Sora"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Sora"], "display-mobile": ["Sora"], "headline-xl": ["Sora"], "headline-lg": ["Sora"], "body-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Sora"] }, fontSize: { "body-xl": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span></button><img alt="Lunexa Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U5uudeQSdyiVajGP66FEbxrle5ubMlBOXsKiR6K-fMJCOBhDQH34j7ic5jyrk-sSFB9RKOTRYVjLdiUERcrs7RpaX66Syt9G55xlGKod9YW9pIxngd343BdpGwmuJfr1J9aB-HQy76qvXtg_B3HVAbPwUzMrjNzZuUAjhg7lEZ0q8dSG6aOGVUNYT9bzWuU9ofuwWxzjcSEpEOaLtT9vU8f39oHy0B_YmDfBZBfF36pHM-WywQFjEMBE4"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-medium pl-space-xs">Product Detail</h1></div><div class="flex items-center"><div class="p-space-xs flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9YcINAHKVuZ7RXLKoSuEsUKTz4uf6Q86KQqxlUQP-F-ELJIaOtScy071CIheXRlbWt5K1Vfhb0GDdrpLq5pP0rAkntrXtBivLCp9nJ5rvU_HRtaCYFemo08d4ypIISk7dvZ-CN7qnfwZTgv_SDqpjBCsQV5VBy2uCK3CoxeeCSvGHS1U5oERNImlk14zUaQUHWG74o7beg2-DXoIM9ndjPOdyChhgG_9CpeUFUCYoPzWg8BHfwi5hvw"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-32">
+<!-- Top Showcase & Visual Gallery -->
+<div class="relative w-full px-gutter-mobile pt-space-xs">
+<!-- Main Hero Card -->
+<div class="relative w-full h-80 rounded-lg overflow-hidden bg-surface-container-low flex flex-col justify-between p-space-md shadow-xl">
+<!-- Glow Gradient Underlay -->
+<div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-primary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-56 h-56 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<!-- Top Action Badges -->
+<div class="relative z-10 flex items-center justify-between w-full">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-highest/80 backdrop-blur-md text-secondary text-label-sm font-label-sm uppercase tracking-wider shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+          New Flagship
+        </span>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Share product" class="w-9 h-9 rounded-full bg-surface-container-highest/80 backdrop-blur-md text-on-surface flex items-center justify-center active:scale-95 transition-transform" id="shareBtn">
+<span class="material-symbols-outlined text-lg">share</span>
+</button>
+<button aria-label="Add to wishlist" class="w-9 h-9 rounded-full bg-surface-container-highest/80 backdrop-blur-md text-on-surface flex items-center justify-center active:scale-95 transition-transform" id="favBtn">
+<span class="material-symbols-outlined text-lg transition-colors" id="favIcon">favorite</span>
+</button>
+</div>
+</div>
+<!-- Main Product Image -->
+<div class="absolute inset-0 flex items-center justify-center p-space-lg pointer-events-none">
+<img class="w-full h-full object-contain filter drop-shadow-[0_16px_28px_rgba(0,0,0,0.85)] transition-all duration-300" data-alt="Futuristic luxury matte black over-ear wireless headphones with subtle luminescent emerald accents floating elegantly against an onyx dark tech studio background with soft rim lighting and studio volumetric shadows" id="mainProductImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1F4_XZxvReulMLxg2zagVOTYdbP2hAIlhVBBD4NoCy4quOnuGq2Df1_-ouZiIimC7LwxR2i5w1vpldrLtj3zBB0UbS7R0h4xchqKmKRJ1YvK19qhC705rSsxK1_V4dBXLBvzPmCY4CpiFAyjmX6bGXH_lA-5s7eDo06vHFvQbS4CIDWnVUJL_jt7NrIpr-a8MYqjBwlpmmIZDcw-OtBwBgO4-2Dz-0TzYU7uW43p-zteWg-xhfxP89w"/>
+</div>
+<!-- Bottom Gallery Actions -->
+<div class="relative z-10 flex items-end justify-between w-full">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-highest/85 backdrop-blur-md text-on-surface text-label-md font-label-md active:scale-95 transition-all shadow-md" id="view360Btn">
+<span class="material-symbols-outlined text-primary text-base">360</span>
+<span>360° Interactive</span>
+</button>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 text-on-surface-variant text-label-sm font-label-sm tracking-wide">
+<span id="activeImgIndex">1</span> / 4
+        </span>
+</div>
+</div>
+<!-- Thumbnail Strip -->
+<div class="flex items-center gap-2.5 mt-space-sm overflow-x-auto no-scrollbar py-1">
+<button class="thumb-btn relative flex-shrink-0 w-16 h-16 rounded bg-surface-container-low overflow-hidden p-1 shadow-sm transition-all duration-200 ring-2 ring-primary" onclick="switchPhoto(0, this)">
+<img class="w-full h-full object-cover rounded" data-alt="Angled studio view of Lunexa Apex headphones showing plush memory foam earcups and polished titanium headband finish in dark studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9z5C6tr0i-3EEqIQJ7WJhazWSKeV4KSoGC16p3_MlH3yNLyE5eZKknyQdew8UQ_Sq-yuzdxywBDRpReQPCUJouRwkvJkcNFmDHz68p3O_m-zSSibNPx5Alds71dR5PF9PVhuuWs3mRO4ikWlFQB-HPF3oYwyeLGJ0vkB2KnKGhM_O3cT8I6UCtmJKaaBpbCO320BKgNyUBzqgAQrIYkc4x50KRxOfL2BVDTEXRIXNpjq46hwtjR9eGQ"/>
+</button>
+<button class="thumb-btn relative flex-shrink-0 w-16 h-16 rounded bg-surface-container-low overflow-hidden p-1 shadow-sm transition-all duration-200 opacity-60" onclick="switchPhoto(1, this)">
+<img class="w-full h-full object-cover rounded" data-alt="Side profile macro shot highlighting acoustic vents, precision volume dials, and luminescent teal LED status rings on headphone chassis" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz2lHs-M8LkzhEdo9E72uPHj1Cw19otjMVC9KTDGM8QMueWNKn8rhO04YE2B3Gps12P_pYYOY4Xq2vRtT2AcX8AHpOyj0O5BazwZGk6s-kNMJ89HmeEwPDqLhnFzB-MKILID2lmI6VnQ872k_qNrlI9jZdlYho7-U5FFj8maX-2Jb0mKMh9DuBLPm1ys4_RWrD1VzkhhLMXDRjlr0lBF_wcxQhUb3loxmesoytrAtTngd_0JnbWvpkXw"/>
+</button>
+<button class="thumb-btn relative flex-shrink-0 w-16 h-16 rounded bg-surface-container-low overflow-hidden p-1 shadow-sm transition-all duration-200 opacity-60" onclick="switchPhoto(2, this)">
+<img class="w-full h-full object-cover rounded" data-alt="Sophisticated lifestyle close-up of a person wearing Lunexa Apex over-ear headphones in a dimly lit modern executive lounge with city lights blurred behind" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPH5Ub9tDVEBmDO6qSH8yH_LchHnW8R1w6QjbYnU5YrrALb-9vWL9hJlaBH4bgqY1Cdti3ZAZXWLZClVC_8AorWR2yMk3uLlxI_PtAKIp7y3LFr83Bcr4e8u7Ab_LvCFFqbbY6WghmK7WGbHHBXN7lRVANvPeNHsMUXS4io_IpLgAyl_zuaVILTaY_Ej2zbyA1PuTi8EiP8_nanC17bDIB3eEsNL9_DS9hp6mkQz4POkf83a851tS1SQ"/>
+</button>
+<button class="thumb-btn relative flex-shrink-0 w-16 h-16 rounded bg-surface-container-low overflow-hidden p-1 shadow-sm transition-all duration-200 opacity-60" onclick="switchPhoto(3, this)">
+<img class="w-full h-full object-cover rounded" data-alt="Lunexa Apex wireless headphones folded neatly inside premium molded ballistic nylon travel carrying case with magnetic braided charging cable" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0R9rNXB9_EjE1Eq6Tg_UbLq9oDQQou7NeEmemKY5nLGAg7Zbt1sSKSTqgDf1cVccmFKe7bkIdTEgqgKcfmDBAFrrzj-LZnehXGzdMILeh6QhFKbRBVrsqIEdT39mAphrRk5Nf8ha-6w7peo64KBh2x7S9Kq_kBmyciMLXvVxWFfPA-Md60YDKyeV5RUA8wzpCujvJ1fS-X4lB7mjbL7G22Vd1hFB-p0kQKQb7mNor5CsCr6L41Nj3cg"/>
+</button>
+</div>
+</div>
+<!-- Product Title & Highlights Block -->
+<div class="px-gutter-mobile mt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-primary tracking-wider uppercase font-semibold">Lunexa Soundlabs</span>
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-primary-fixed-dim bg-primary/10 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span>
+        Ready to Ship in 24h
+      </span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight font-semibold">Lunexa Apex Wireless</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Studio-grade spatial audio with dual-core adaptive active noise cancellation and lossless acoustic drivers.</p>
+<!-- Rating Aggregate -->
+<div class="flex items-center gap-2 mt-1 flex-wrap">
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface ml-1">4.9</span>
+</div>
+<span class="text-on-surface-variant text-body-sm font-body-sm">(1,240 verified reviews)</span>
+<span class="text-on-surface-variant text-body-sm">•</span>
+<span class="text-primary font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded-full font-medium">98% Recommended</span>
+</div>
+</div>
+<!-- Pricing Card Block -->
+<div class="px-gutter-mobile mt-space-md">
+<div class="w-full rounded-lg bg-surface-container p-space-md shadow-md flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">$289.00</span>
+<span class="font-body-md text-body-md text-outline line-through">$350.00</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="text-label-sm font-label-sm text-tertiary bg-tertiary/15 px-2 py-0.5 rounded-full font-semibold">Save $61 (17% OFF)</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Limited Launch Tier</span>
+</div>
+</div>
+<div class="text-right">
+<div class="flex items-center gap-1 justify-end text-primary">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span class="text-label-sm font-label-sm font-bold uppercase">In Stock</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Free Express Courier</span>
+</div>
+</div>
+</div>
+<!-- Color Finish Selector -->
+<div class="px-gutter-mobile mt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Select Color Finish</span>
+<span class="font-label-md text-label-md text-primary font-medium" id="selectedColorName">Matte Obsidian</span>
+</div>
+<div class="grid grid-cols-3 gap-2.5">
+<!-- Finish 1 -->
+<button class="color-option active flex flex-col items-center gap-2 p-3 rounded-DEFAULT bg-surface-container-high shadow-sm transition-all text-center" onclick="selectColor('Matte Obsidian', this)">
+<div class="w-7 h-7 rounded-full bg-[#161a22] shadow-inner flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-base check-icon">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate w-full">Obsidian</span>
+</button>
+<!-- Finish 2 -->
+<button class="color-option flex flex-col items-center gap-2 p-3 rounded-DEFAULT bg-surface-container text-on-surface-variant transition-all text-center" onclick="selectColor('Electric Emerald', this)">
+<div class="w-7 h-7 rounded-full bg-primary-container shadow-inner flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-base check-icon hidden">check</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold truncate w-full">Emerald</span>
+</button>
+<!-- Finish 3 -->
+<button class="color-option flex flex-col items-center gap-2 p-3 rounded-DEFAULT bg-surface-container text-on-surface-variant transition-all text-center" onclick="selectColor('Titanium Silver', this)">
+<div class="w-7 h-7 rounded-full bg-[#94a3b8] shadow-inner flex items-center justify-center">
+<span class="material-symbols-outlined text-[#0f131c] text-base check-icon hidden">check</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold truncate w-full">Titanium</span>
+</button>
+</div>
+</div>
+<!-- Key Highlight Pills -->
+<div class="px-gutter-mobile mt-space-lg">
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl">surround_sound</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Spatial Audio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Dynamic Head Tracking</span>
+</div>
+</div>
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl">battery_charging_full</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">48h Playback</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">10m Charge = 5 Hours</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Specifications & Feature Accordions -->
+<div class="px-gutter-mobile mt-space-lg flex flex-col gap-2.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Product Details</h2>
+<!-- Accordion Item 1 -->
+<details class="group rounded-DEFAULT bg-surface-container-low transition-colors duration-200" open="">
+<summary class="flex items-center justify-between p-4 cursor-pointer list-none select-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">graphic_eq</span>
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Acoustic Drivers &amp; ANC</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 text-on-surface-variant font-body-md text-body-md flex flex-col gap-2">
+<p>Custom 45mm custom biocellulose neodymium drivers producing ultra-low 0.03% total harmonic distortion. Hybrid 6-microphone array cancels ambient environmental noise up to -42dB in real-time.</p>
+<div class="flex gap-2 mt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface text-label-sm font-label-sm">Frequency: 5Hz - 42kHz</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface text-label-sm font-label-sm">Codec: LDAC &amp; aptX HD</span>
+</div>
+</div>
+</details>
+<!-- Accordion Item 2 -->
+<details class="group rounded-DEFAULT bg-surface-container-low transition-colors duration-200">
+<summary class="flex items-center justify-between p-4 cursor-pointer list-none select-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-xl">battery_saver</span>
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Battery Life &amp; Charging</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 text-on-surface-variant font-body-md text-body-md">
+<p>Up to 48 hours of continuous wireless playback with active ANC enabled (65 hours with ANC switched off). Intelligent USB-C hyper-charge provides 5 hours of listening time from a brief 10-minute top-up.</p>
+</div>
+</details>
+<!-- Accordion Item 3 -->
+<details class="group rounded-DEFAULT bg-surface-container-low transition-colors duration-200">
+<summary class="flex items-center justify-between p-4 cursor-pointer list-none select-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-xl">inventory_2</span>
+<span class="font-label-lg text-label-lg text-on-surface font-medium">What's Inside The Box</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 text-on-surface-variant font-body-md text-body-md flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Lunexa Apex Wireless Headphones</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Ballistic nylon protective hard travel case</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>1.2m braided USB-C to USB-C charging cable</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Gold-plated 3.5mm analog audio cable &amp; airplane adapter</span>
+</div>
+</div>
+</details>
+<!-- Accordion Item 4 -->
+<details class="group rounded-DEFAULT bg-surface-container-low transition-colors duration-200">
+<summary class="flex items-center justify-between p-4 cursor-pointer list-none select-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim text-xl">verified_user</span>
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Warranty &amp; 30-Day Guarantee</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 text-on-surface-variant font-body-md text-body-md">
+<p>Protected by Lunexa 2-Year International Hardware Warranty. Enjoy a no-risk 30-day home trial period with instant prepaid return shipping if not completely astonished.</p>
+</div>
+</details>
+</div>
+<!-- Verified Customer Review Highlight -->
+<div class="px-gutter-mobile mt-space-lg mb-4">
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold">User Spotlight</h3>
+<button class="font-label-md text-label-md text-primary font-medium hover:underline">Read All 1,240</button>
+</div>
+<div class="w-full rounded-DEFAULT bg-surface-container-low p-space-md shadow-md flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Close-up studio portrait of a music producer wearing audio engineer attire looking happy in ambient violet studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-2hbQ8ZRMsvgyhA8BTjwkdBFlo_kB2Z5wKURV6mjPaBYbhq3ABZuSPQi-AaYx1HRkXKsoZi3YfGMfX6eshQEFTBHnpM4yerUtP2gkU08UmGqvxiiq2tyUOIxwUU0u5DqXXlJXm6vPG_huf2EyUKgijKF1_8uZRitBoZ244jrgcvfKoXXlnRim7mSj2H19JeNX0t_GIKeDYKFo_CflAz4INi1tOqC-ZbTt0uxGeqQ2oPSQhKGa9MZ5MQ"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Marcus Vance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sound Designer • Audio Verified</span>
+</div>
+</div>
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">"Best headphones I have ever owned, ANC is unreal. The instrument separation on lossless tracks makes you feel like you are standing right in the center of the recording studio."</p>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-outline">
+<span>Reviewed 3 days ago</span>
+<span>•</span>
+<span>Color: Matte Obsidian</span>
+</div>
+</div>
+</div>
+<!-- Persistent Sticky Bottom Mini-Cart Dock -->
+<div class="fixed bottom-0 inset-x-0 z-40 bg-surface/90 backdrop-blur-2xl px-gutter-mobile py-space-sm pb-safe shadow-[0_-8px_30px_rgba(0,0,0,0.6)]">
+<div class="flex items-center justify-between gap-3 max-w-lg mx-auto">
+<!-- Quantity Controller -->
+<div class="flex items-center bg-surface-container-high rounded-full p-1 shadow-inner">
+<button aria-label="Decrease quantity" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-variant active:scale-90 transition-all" onclick="adjustQty(-1)">
+<span class="material-symbols-outlined text-base">remove</span>
+</button>
+<span class="font-label-lg text-label-lg text-on-surface w-6 text-center font-bold" id="qtyVal">1</span>
+<button aria-label="Increase quantity" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-variant active:scale-90 transition-all" onclick="adjustQty(1)">
+<span class="material-symbols-outlined text-base">add</span>
+</button>
+</div>
+<!-- Add to Cart Pill Button -->
+<button class="flex-1 h-12 rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-between px-5 active:scale-[0.98] transition-all shadow-[0_0_24px_-4px_rgba(16,185,129,0.35)]" id="addToCartBtn" onclick="handleAddToCart()">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span>Add to Cart</span>
+</div>
+<span class="text-on-primary font-bold tracking-tight" id="dynamicPriceTag">$289.00</span>
+</button>
+</div>
+</div>
+<!-- Added Notification Toast Popup (Hidden by default) -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 pointer-events-none opacity-0 translate-y-3 flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-surface-container-highest/95 backdrop-blur-xl shadow-2xl text-on-surface text-label-md font-label-md" id="cartToast">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span id="toastMessage">Added Lunexa Apex to your Cart</span>
+</div>
+</div>
+<script>
+  let currentQty = 1;
+  const unitPrice = 289.00;
+  let isFav = false;
+
+  function adjustQty(delta) {
+    currentQty = Math.max(1, currentQty + delta);
+    document.getElementById('qtyVal').textContent = currentQty;
+    const total = (unitPrice * currentQty).toFixed(2);
+    document.getElementById('dynamicPriceTag').textContent = `$${total}`;
+  }
+
+  function switchPhoto(index, el) {
+    document.querySelectorAll('.thumb-btn').forEach(btn => {
+      btn.classList.remove('ring-2', 'ring-primary', 'opacity-100');
+      btn.classList.add('opacity-60');
+    });
+    el.classList.remove('opacity-60');
+    el.classList.add('ring-2', 'ring-primary', 'opacity-100');
+    document.getElementById('activeImgIndex').textContent = index + 1;
+    
+    // Visual micro-bounce on main preview
+    const heroImg = document.getElementById('mainProductImg');
+    heroImg.classList.add('scale-95');
+    setTimeout(() => heroImg.classList.remove('scale-95'), 180);
+  }
+
+  function selectColor(colorName, el) {
+    document.getElementById('selectedColorName').textContent = colorName;
+    document.querySelectorAll('.color-option').forEach(btn => {
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+      btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      const check = btn.querySelector('.check-icon');
+      if (check) check.classList.add('hidden');
+    });
+    el.classList.add('bg-surface-container-high', 'text-on-surface');
+    el.classList.remove('bg-surface-container', 'text-on-surface-variant');
+    const activeCheck = el.querySelector('.check-icon');
+    if (activeCheck) activeCheck.classList.remove('hidden');
+  }
+
+  // Favorite toggle
+  const favBtn = document.getElementById('favBtn');
+  const favIcon = document.getElementById('favIcon');
+  favBtn.addEventListener('click', () => {
+    isFav = !isFav;
+    if (isFav) {
+      favIcon.style.fontVariationSettings = "'FILL' 1";
+      favIcon.classList.add('text-error');
+      triggerToast('Saved to your Lunexa Wishlist');
+    } else {
+      favIcon.style.fontVariationSettings = "'FILL' 0";
+      favIcon.classList.remove('text-error');
+    }
+  });
+
+  // Share action
+  document.getElementById('shareBtn').addEventListener('click', () => {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Lunexa Apex Wireless Headphones',
+        url: window.location.href
+      }).catch(() => {});
+    } else {
+      triggerToast('Product link copied to clipboard');
+    }
+  });
+
+  // 360 viewer trigger
+  document.getElementById('view360Btn').addEventListener('click', () => {
+    triggerToast('360° Studio Vitrine Activated');
+  });
+
+  function handleAddToCart() {
+    triggerToast(`Added ${currentQty}x Lunexa Apex to Cart!`);
+    const btn = document.getElementById('addToCartBtn');
+    btn.classList.add('scale-95');
+    setTimeout(() => btn.classList.remove('scale-95'), 150);
+  }
+
+  function triggerToast(msg) {
+    const toast = document.getElementById('cartToast');
+    const toastMsg = document.getElementById('toastMessage');
+    toastMsg.textContent = msg;
+    toast.classList.remove('opacity-0', 'translate-y-3');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-3');
+    }, 2400);
+  }
+</script></main></body></html>

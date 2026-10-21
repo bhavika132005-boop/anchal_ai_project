@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Sora:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#006c49", "surface-variant": "#31353e", "secondary-fixed": "#acedff", "outline-variant": "#3c4a42", "primary-fixed-dim": "#4edea3", "tertiary": "#ffb95f", "inverse-surface": "#dfe2ee", "secondary": "#4cd7f6", "on-tertiary-container": "#523200", "on-tertiary-fixed-variant": "#653e00", "outline": "#86948a", "tertiary-fixed": "#ffddb8", "surface-bright": "#353942", "on-secondary-fixed-variant": "#004e5c", "surface": "#0f131c", "surface-container-highest": "#31353e", "background": "#0f131c", "primary-fixed": "#6ffbbe", "secondary-container": "#03b5d3", "on-surface": "#dfe2ee", "tertiary-container": "#e29100", "on-secondary-fixed": "#001f26", "secondary-fixed-dim": "#4cd7f6", "error-container": "#93000a", "on-primary-fixed-variant": "#005236", "on-error-container": "#ffdad6", "on-primary": "#003824", "surface-container": "#1c2028", "primary-container": "#10b981", "on-surface-variant": "#bbcabf", "on-secondary-container": "#00424e", "on-background": "#dfe2ee", "on-primary-container": "#00422b", "surface-dim": "#0f131c", "surface-container-lowest": "#0a0e16", "inverse-on-surface": "#2c3039", "on-secondary": "#003640", "surface-tint": "#4edea3", "surface-container-low": "#181c24", "tertiary-fixed-dim": "#ffb95f", "primary": "#4edea3", "error": "#ffb4ab", "on-primary-fixed": "#002113", "on-tertiary": "#472a00", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#262a33", "on-error": "#690005" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin": "3rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "space-xs": "0.25rem" }, fontFamily: { "body-xl": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-sm": ["Sora"], "headline-md": ["Sora"], "display": ["Sora"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Sora"], "display-mobile": ["Sora"], "headline-xl": ["Sora"], "headline-lg": ["Sora"], "body-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Sora"] }, fontSize: { "body-xl": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Lunexa Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U5uudeQSdyiVajGP66FEbxrle5ubMlBOXsKiR6K-fMJCOBhDQH34j7ic5jyrk-sSFB9RKOTRYVjLdiUERcrs7RpaX66Syt9G55xlGKod9YW9pIxngd343BdpGwmuJfr1J9aB-HQy76qvXtg_B3HVAbPwUzMrjNzZuUAjhg7lEZ0q8dSG6aOGVUNYT9bzWuU9ofuwWxzjcSEpEOaLtT9vU8f39oHy0B_YmDfBZBfF36pHM-WywQFjEMBE4"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">Lunexa</span><span class="hidden">Catalog</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-all"><span class="material-symbols-outlined text-2xl">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface animate-pulse"></span></button><div class="p-space-xs flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9YcINAHKVuZ7RXLKoSuEsUKTz4uf6Q86KQqxlUQP-F-ELJIaOtScy071CIheXRlbWt5K1Vfhb0GDdrpLq5pP0rAkntrXtBivLCp9nJ5rvU_HRtaCYFemo08d4ypIISk7dvZ-CN7qnfwZTgv_SDqpjBCsQV5VBy2uCK3CoxeeCSvGHS1U5oERNImlk14zUaQUHWG74o7beg2-DXoIM9ndjPOdyChhgG_9CpeUFUCYoPzWg8BHfwi5hvw"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Dynamic Category Ambient Flare -->
+<div class="relative px-margin-mobile pt-space-sm pb-space-xs">
+<div class="relative flex items-center justify-between mb-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Audio Vitrine</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface mt-0.5 tracking-tight">Wireless &amp; Audio</h1>
+</div>
+<div class="bg-surface-container-high/80 backdrop-blur-md px-space-sm py-1 rounded-full shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">24 items</span>
+</div>
+</div>
+<!-- Search / Filter Query Input Field -->
+<div class="relative flex items-center w-full mt-space-xs">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input aria-label="Filter current catalog" class="w-full bg-surface-container-low/90 text-on-surface font-body-md text-body-md pl-10 pr-10 py-2.5 rounded-full shadow-inner focus:outline-none focus:bg-surface-container-high transition-all placeholder:text-on-surface-variant" type="text" value="Wireless &amp; Audio"/>
+<button aria-label="Clear Search" class="absolute right-3 w-6 h-6 flex items-center justify-center rounded-full bg-surface-variant text-on-surface-variant hover:text-on-surface active:scale-95">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Filter Chips Scroll View -->
+<div class="w-full overflow-x-auto py-space-xs px-margin-mobile flex items-center gap-2 no-scrollbar">
+<!-- Active Chip: Price -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary shrink-0 shadow-sm transition-all active:scale-95">
+<span class="font-label-sm text-label-sm font-semibold">Price: &lt; $300</span>
+<button aria-label="Remove price filter" class="flex items-center hover:opacity-75">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Active Chip: In Stock -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary/10 text-secondary shrink-0 shadow-sm transition-all active:scale-95">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-semibold">In Stock</span>
+<button aria-label="Remove stock filter" class="flex items-center hover:opacity-75">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Active Chip: Rating -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary shrink-0 shadow-sm transition-all active:scale-95">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold">4.5+</span>
+<button aria-label="Remove rating filter" class="flex items-center hover:opacity-75">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Clear All Button -->
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface text-label-sm font-label-sm shrink-0 active:scale-95 transition-all">
+      Clear All
+    </button>
+</div>
+<!-- Filter, View & Sort Control Matrix -->
+<div class="flex items-center justify-between px-margin-mobile py-space-xs mt-1">
+<!-- Filter Modal Trigger Button -->
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-high/90 text-on-surface shadow-sm active:scale-95 transition-all" id="openFilterBtn">
+<span class="material-symbols-outlined text-[18px] text-primary">tune</span>
+<span class="font-label-md text-label-md">Filter &amp; Sort</span>
+<span class="w-4 h-4 rounded-full bg-primary text-on-primary text-[10px] font-bold flex items-center justify-center">3</span>
+</button>
+<div class="flex items-center gap-2">
+<!-- Sort Pill Select Dropdown -->
+<div class="flex items-center gap-1 bg-surface-container-low px-3 py-1.5 rounded-full shadow-inner">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">swap_vert</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sort:</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Popularity</span>
+</div>
+<!-- View Switcher (Grid vs List) -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-full shadow-inner" id="viewModeGroup">
+<button aria-label="Grid view" class="w-7 h-7 flex items-center justify-center rounded-full bg-surface-container-highest text-primary shadow-sm transition-colors" id="btnGrid">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button aria-label="List view" class="w-7 h-7 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" id="btnList">
+<span class="material-symbols-outlined text-[18px]">view_agenda</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 2-Column Responsive Product Catalog Grid -->
+<div class="grid grid-cols-2 gap-gutter-mobile px-margin-mobile pt-space-xs pb-space-lg" id="catalogContainer">
+<!-- Card 1: Aura Neo Buds Pro -->
+<article class="flex flex-col bg-surface-container-low rounded-DEFAULT p-space-sm shadow-md relative overflow-hidden group">
+<div class="relative w-full aspect-square rounded-DEFAULT bg-surface-container-highest/60 overflow-hidden flex items-center justify-center">
+<!-- Stock/Discount Micro Badges -->
+<div class="absolute top-2 left-2 z-10">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-[10px] font-bold tracking-wide backdrop-blur-md">-18%</span>
+</div>
+<button aria-label="Add to wishlist" class="absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<!-- Product Image Placeholder -->
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Futuristic matte black and cyan wireless earbuds nestled inside a titanium charging case on an obsidian reflective surface with subtle emerald backlight glowing from underneath, sleek commercial product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyAl0xkwz-5NmiSbL1Pesc-8ByszVXUuJ-no9x2e43MTq877ZooNX1CVXeLoBYTPnQE8AfNWIdYKyE5cR5Z15Us7mhwP2IWbJHflMC1UqpsZwgqCLUNnZYcWZn98-ilJkfY_AlB_9aOScPcj50myJ0_5GnMQE867BwtKqGxNm2fyVwYCUIG95hXWc5Fdy6tx08kC6A-sn5bgn1NotYEADXKouyuMCtxHqM5pR2Mj3SwahtdiAcIWlmOQ"/>
+</div>
+<div class="flex flex-col flex-1 mt-2.5">
+<!-- Rating & Reviews -->
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(128)</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold mt-1 truncate">Aura Neo Buds Pro</h3>
+<!-- Swatches Preview -->
+<div class="flex items-center gap-1.5 my-2">
+<span class="w-3 h-3 rounded-full bg-surface-container-lowest shadow ring-1 ring-outline-variant"></span>
+<span class="w-3 h-3 rounded-full bg-primary ring-1 ring-primary/40"></span>
+<span class="w-3 h-3 rounded-full bg-inverse-surface/80"></span>
+<span class="font-label-sm text-[9px] text-on-surface-variant pl-0.5">+2</span>
+</div>
+<!-- Price Breakdown -->
+<div class="flex items-baseline gap-1.5 mt-auto">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">$189</span>
+<span class="font-body-sm text-body-sm line-through text-on-surface-variant">$229</span>
+</div>
+<!-- Add To Cart Pill -->
+<button class="w-full mt-2 py-2 px-3 rounded-full bg-primary hover:bg-primary-fixed text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Obsidian SoundCore ANC -->
+<article class="flex flex-col bg-surface-container-low rounded-DEFAULT p-space-sm shadow-md relative overflow-hidden group">
+<div class="relative w-full aspect-square rounded-DEFAULT bg-surface-container-highest/60 overflow-hidden flex items-center justify-center">
+<!-- Micro-Badge: Bestseller -->
+<div class="absolute top-2 left-2 z-10">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-[10px] font-bold tracking-wide backdrop-blur-md">Bestseller</span>
+</div>
+<button aria-label="Add to wishlist" class="absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Luxury matte obsidian over-ear headphones with dark carbon fiber chassis, acoustic leatherette memory foam earcups, isolated against a dark slate moody studio background with subtle cyan rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-muDVTVi8-uJ38oA8f1L55cJ3rJSmZ0d6dP9qkyWQDHUZZ9tzrZt0p8Kclt83D3lWiFAXrwQxt98NreIpBYArdvSmMyLUPPiNSsEL9el2f6_3BgwH3Oflk14EgXh-1QNW_gNkKQC4fR4BftE8_47G_RCw386cNaFRCS_lNgZ1Mm0X_pa1PE9NtvBeIoCWPqB-D6YV9H1oyi2GOkqhS0ZYLLIi6g7svQWin7i2dFoIPPUJZUYFA8j5GA"/>
+</div>
+<div class="flex flex-col flex-1 mt-2.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(86)</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold mt-1 truncate">Obsidian SoundCore ANC</h3>
+<!-- Feature Pill -->
+<div class="my-2">
+<span class="inline-block px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Hi-Res Lossless</span>
+</div>
+<div class="flex items-baseline gap-1.5 mt-auto">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$349</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded-full bg-primary hover:bg-primary-fixed text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Vortex Spatial Over-Ear -->
+<article class="flex flex-col bg-surface-container-low rounded-DEFAULT p-space-sm shadow-md relative overflow-hidden group">
+<div class="relative w-full aspect-square rounded-DEFAULT bg-surface-container-highest/60 overflow-hidden flex items-center justify-center">
+<!-- Micro-Badge: Limited -->
+<div class="absolute top-2 left-2 z-10">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/30 text-primary-fixed font-label-sm text-[10px] font-bold tracking-wide backdrop-blur-md">Limited Edition</span>
+</div>
+<button aria-label="Add to wishlist" class="absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Futuristic brushed aluminum and iridescent spatial headphones resting on an elevated dark pedestal, ambient bioluminescent mint green rays and micro reflections highlighting smooth curvature, cinematic studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCONypfjH46BQwCahP9UJZ7NOVL1aqn7ehmYM9GAeUeLFM7g3merZns5hVCnMF0rOc-4FI31Za6-5D3c-ZLW4Ixn9lYsf7G5bxywhXC0JqIlM8mB7GGj4TLtkO9zvJQbuTshZNT__fcItBJTtFXrhTLlSeCGm3vPV6RQcNtHgrIZwXwDOK02XEqoEO9jiFhFi_4NI_hFAbhbO_cEa9HLUPIrmeykpkzLFYASbM3Tt2S9_At75-5iLIBdQ"/>
+</div>
+<div class="flex flex-col flex-1 mt-2.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">5.0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(42)</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold mt-1 truncate">Vortex Spatial Over-Ear</h3>
+<div class="my-2">
+<span class="inline-block px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Head-Tracking 3D</span>
+</div>
+<div class="flex items-baseline gap-1.5 mt-auto">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$420</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md font-bold flex items-center justify-center gap-1 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>View</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Pulse Echo Portable 360 -->
+<article class="flex flex-col bg-surface-container-low rounded-DEFAULT p-space-sm shadow-md relative overflow-hidden group">
+<div class="relative w-full aspect-square rounded-DEFAULT bg-surface-container-highest/60 overflow-hidden flex items-center justify-center">
+<!-- Stock Ping Warning Badge -->
+<div class="absolute top-2 left-2 z-10 flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container/60 text-error font-label-sm text-[10px] font-bold backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+<span>3 left</span>
+</div>
+<button aria-label="Add to wishlist" class="absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Cylindrical smart Bluetooth speaker wrapped in metallic charcoal woven acoustic mesh with an illuminated neon ring pulse on the top dial, resting on dark granite table with soft mist atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsTiCmp8HvtcvyLpc0B9UWH2mt00vLtgKc7Z9DXPQpxMmm_YcyNatnoZxBB3zdnhH1Kd1fHssMOVmf4OdBW4JHurT26gwzPqxpJywgjr5FdrMBe1Qm2EO-7316sIRFVNx5C5lhKrgo7xkntiO9isu60DU6GfUorYeMfSFH7o5N7LFtlMsnsUtuTMjwW6WWKoXhhtU4umAh1p59xMeetIP5Dd1Q6letqzkMfMP0A3R5-L-aJW8twpGI5A"/>
+</div>
+<div class="flex flex-col flex-1 mt-2.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(210)</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold mt-1 truncate">Pulse Echo Portable 360</h3>
+<div class="my-2">
+<span class="inline-block px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">IPX7 Waterproof</span>
+</div>
+<div class="flex items-baseline gap-1.5 mt-auto">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">$129</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded-full bg-primary hover:bg-primary-fixed text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</article>
+<!-- Card 5: AeroClip Sport Earphones -->
+<article class="flex flex-col bg-surface-container-low rounded-DEFAULT p-space-sm shadow-md relative overflow-hidden group">
+<div class="relative w-full aspect-square rounded-DEFAULT bg-surface-container-highest/60 overflow-hidden flex items-center justify-center">
+<button aria-label="Add to wishlist" class="absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Ultralight ergonomic bone conduction wireless sport earphones designed with flexible titanium wire and teal earhooks, lying gracefully on a textured dark asphalt surface with dramatic side angle lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7gVlDRhgA7PhuJbaSwrGmBWxQY52u-UUJbS-Xhi6y3eSTB0ATcb175FUXR3WhDThH5IETyiQql2CwwcelwffT6BCLH8QWn-m_2xz8mYDmHAMD1QLvfFj1yVC1isGixqjLRSuUF0BU3PQv87QtdobmDzLJ26SGsK9OPePik1WZk-oMmGc70iipDBqIo7QBJK_WPK9lKS-t5269jJHW4g2Fz_wvJyARYu4IjAT8K0Fu7Pq0EY4NufSBDw"/>
+</div>
+<div class="flex flex-col flex-1 mt-2.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(65)</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold mt-1 truncate">AeroClip Sport</h3>
+<div class="my-2">
+<span class="inline-block px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Open-Ear Secure</span>
+</div>
+<div class="flex items-baseline gap-1.5 mt-auto">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$89</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded-full bg-primary hover:bg-primary-fixed text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</article>
+<!-- Card 6: Studio Master Pro Reference -->
+<article class="flex flex-col bg-surface-container-low rounded-DEFAULT p-space-sm shadow-md relative overflow-hidden group">
+<div class="relative w-full aspect-square rounded-DEFAULT bg-surface-container-highest/60 overflow-hidden flex items-center justify-center">
+<!-- Audiophile Class Badge -->
+<div class="absolute top-2 left-2 z-10">
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm text-[10px] font-bold tracking-wide backdrop-blur-md">Flagship</span>
+</div>
+<button aria-label="Add to wishlist" class="absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Audiophile open-back planar magnetic studio reference headphones with precision milled walnut wood exterior grills and thick lambskin leather headband on a minimalist dark architectural stand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYY1Sylut48niPNGLzV0yl2k3DPvCK2hA06WC7bkvR2ZZdOeMVMgCzZeRJDiGx_7wBUBxIEplHoKnIyHmdQX8-JxCkoyNyxqr3OXjhE2G9qWJv71b_eoSCBTJWQinmLv3D78AX3wWGO0PXLfcFmUZ0e8GBHb6iVFbOa91KJsemE4rKOPxKz5AVuWf2fI8U-sebcTL2p-Ae05dQUkHB-q1KZOHeO1m_cpx5oqgyuau4MPLIbnHUMUloMQ"/>
+</div>
+<div class="flex flex-col flex-1 mt-2.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(19)</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold mt-1 truncate">Studio Master Pro</h3>
+<div class="my-2">
+<span class="inline-block px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Planar Magnetic</span>
+</div>
+<div class="flex items-baseline gap-1.5 mt-auto">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$580</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded-full bg-primary hover:bg-primary-fixed text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Load More & Catalog Progress Indicator -->
+<div class="flex flex-col items-center px-margin-mobile pb-space-lg">
+<div class="flex items-center gap-2 mb-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Showing 6 of 24 sound pieces</span>
+</div>
+<!-- Mini Progress Bar -->
+<div class="w-44 h-1.5 rounded-full bg-surface-container-high overflow-hidden mb-space-sm">
+<div class="w-1/4 h-full bg-primary rounded-full"></div>
+</div>
+<button class="px-6 py-3 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md font-semibold flex items-center gap-2 active:scale-95 transition-all shadow-md">
+<span>Load More Products</span>
+<span class="material-symbols-outlined text-[18px] text-primary">expand_more</span>
+</button>
+</div>
+<!-- Sliding Filter Drawer Modal Backdrop & Sheet -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300" id="filterDrawerBackdrop">
+<div class="absolute bottom-0 inset-x-0 bg-surface-container rounded-t-lg p-space-md max-h-[85vh] overflow-y-auto transform translate-y-full transition-transform duration-300 shadow-2xl flex flex-col" id="filterSheet">
+<!-- Drawer Handle Bar -->
+<div class="w-10 h-1 rounded-full bg-surface-variant mx-auto mb-space-sm"></div>
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Filter &amp; Refine</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">24 models match parameters</p>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-95" id="closeFilterBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Filter Sections -->
+<div class="flex flex-col gap-space-md py-space-sm">
+<!-- Price Range Slider Section -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Price Maximum</span>
+<span class="font-label-md text-label-md text-primary font-bold" id="sliderVal">$300</span>
+</div>
+<input class="w-full h-1.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" id="priceRangeSlider" max="1000" min="50" type="range" value="300"/>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span>$50</span>
+<span>$500</span>
+<span>$1000+</span>
+</div>
+</div>
+<!-- Audio Architecture Categories -->
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block mb-2">Acoustic Form</span>
+<div class="flex flex-wrap gap-2">
+<button class="px-3.5 py-1.5 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm font-semibold shadow-sm">True Wireless</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Over-Ear ANC</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Open Back Studio</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Spatial Portable</button>
+</div>
+</div>
+<!-- Features Checklist -->
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block mb-2">Key Capabilities</span>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2 rounded-DEFAULT bg-surface-container-low cursor-pointer">
+<input checked="" class="w-4 h-4 rounded bg-surface-variant accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Active Noise Cancel</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-DEFAULT bg-surface-container-low cursor-pointer">
+<input checked="" class="w-4 h-4 rounded bg-surface-variant accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Spatial Dolby 360</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-DEFAULT bg-surface-container-low cursor-pointer">
+<input class="w-4 h-4 rounded bg-surface-variant accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Multipoint Pairing</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-DEFAULT bg-surface-container-low cursor-pointer">
+<input class="w-4 h-4 rounded bg-surface-variant accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Lossless LDAC</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Sheet Footer Actions -->
+<div class="pt-space-sm mt-auto flex items-center gap-3">
+<button class="w-1/3 py-3 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold text-center active:scale-95 transition-all" id="resetFilters">
+          Reset
+        </button>
+<button class="w-2/3 py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-md active:scale-95 transition-all" id="applyFilters">
+          Apply Filters (24)
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Drawer open/close logic
+    const openBtn = document.getElementById('openFilterBtn');
+    const closeBtn = document.getElementById('closeFilterBtn');
+    const applyBtn = document.getElementById('applyFilters');
+    const backdrop = document.getElementById('filterDrawerBackdrop');
+    const sheet = document.getElementById('filterSheet');
+    const slider = document.getElementById('priceRangeSlider');
+    const sliderVal = document.getElementById('sliderVal');
+
+    function toggleDrawer(open) {
+      if (open) {
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100', 'pointer-events-auto');
+        sheet.classList.remove('translate-y-full');
+        sheet.classList.add('translate-y-0');
+      } else {
+        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        sheet.classList.remove('translate-y-0');
+        sheet.classList.add('translate-y-full');
+      }
+    }
+
+    if (openBtn) openBtn.addEventListener('click', () => toggleDrawer(true));
+    if (closeBtn) closeBtn.addEventListener('click', () => toggleDrawer(false));
+    if (applyBtn) applyBtn.addEventListener('click', () => toggleDrawer(false));
+    if (backdrop) {
+      backdrop.addEventListener('click', (e) => {
+        if (e.target === backdrop) toggleDrawer(false);
+      });
+    }
+
+    // Dynamic slider label
+    if (slider && sliderVal) {
+      slider.addEventListener('input', (e) => {
+        sliderVal.textContent = '$' + e.target.value;
+      });
+    }
+
+    // Grid vs List view switcher toggle
+    const btnGrid = document.getElementById('btnGrid');
+    const btnList = document.getElementById('btnList');
+    const catalogContainer = document.getElementById('catalogContainer');
+
+    if (btnGrid && btnList && catalogContainer) {
+      btnList.addEventListener('click', () => {
+        catalogContainer.classList.remove('grid-cols-2');
+        catalogContainer.classList.add('grid-cols-1');
+        btnList.classList.add('bg-surface-container-highest', 'text-primary');
+        btnList.classList.remove('text-on-surface-variant');
+        btnGrid.classList.remove('bg-surface-container-highest', 'text-primary');
+        btnGrid.classList.add('text-on-surface-variant');
+      });
+
+      btnGrid.addEventListener('click', () => {
+        catalogContainer.classList.remove('grid-cols-1');
+        catalogContainer.classList.add('grid-cols-2');
+        btnGrid.classList.add('bg-surface-container-highest', 'text-primary');
+        btnGrid.classList.remove('text-on-surface-variant');
+        btnList.classList.remove('bg-surface-container-highest', 'text-primary');
+        btnList.classList.add('text-on-surface-variant');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/85 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] transition-colors text-primary" data-path="catalog" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-label-sm text-label-sm">Catalog</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] relative text-on-surface-variant transition-colors" data-path="wishlist" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="absolute -top-1 -right-2 px-1.5 py-0.2 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[9px] font-bold shadow-[0_0_12px_rgba(16,185,129,0.5)]">3</span></div><span class="font-label-sm text-label-sm">Wishlist</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] relative text-on-surface-variant transition-colors" data-path="cart" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-2 px-1.5 py-0.2 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] font-bold shadow-[0_0_12px_rgba(76,215,246,0.5)]">2</span></div><span class="font-label-sm text-label-sm">Cart</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>
